@@ -1,0 +1,130 @@
+:root {
+  --gris-fondo: #e5e5e5;
+  --gris-texto: #a9a9a9;
+  --gris-texto-cuadros: #bdbdbd;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  margin: 25px 0;
+}
+
+.header__img {
+  width: 30%;
+  max-width: 150px;
+  border-radius: 15px;
+}
+
+.header__p {
+  color: var(--gris-texto);
+}
+
+.header > * {
+  margin: 7px 0;
+}
+
+/*Cuadros*/
+
+.cuadros {
+  display: flex;
+  width: 100%;
+  max-width: 400px;
+  justify-content: space-around;
+}
+
+.cuadro {
+  background-color: var(--gris-fondo);
+  border-radius: 10px;
+  width: 90px;
+  padding: 10px;
+  text-align: center;
+}
+
+.cuadro__h2 {
+  font-size: 0.9em;
+}
+
+.cuadro__h2--desc {
+  color: var(--gris-texto-cuadros);
+  font-size: 0.7em;
+}
+
+.galeria{
+  margin: 10% 0;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  max-width: 950px;
+  gap: 3%;
+  margin: 0 auto;
+  margin-bottom: 10vh;
+  grid-template-areas:
+    "foto1 foto2 foto2 "
+    "foto3 foto3 foto4 "
+    "foto5 foto6 foto4 ";
+}
+
+
+.grid > div > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.grid__img1 {
+  grid-area: foto1;
+}
+
+.grid__img2 {
+  grid-area: foto2;
+}
+
+.grid__img3 {
+  grid-area: foto3;
+}
+
+.grid__img4 {
+  grid-area: foto4;
+}
+
+.grid__img5 {
+  grid-area: foto5;
+}
+
+.grid__img6 {
+  grid-area: foto6;
+}
+
+/* Footer */
+
+.footer,
+.footer__a {
+  color: var(--gris-texto);
+  text-align: center;
+}
